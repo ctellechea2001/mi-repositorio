@@ -1,0 +1,66 @@
+siem-teamcity-ci-09 - OK - Enabled - Carlos
+siem-teamcity-ci-08 - OK - Enabled - Carlos
+siem-teamcity-ci-07 - OK - Enabled - Carlos
+siem-teamcity-ci-05 - OK - Enabled - Carlos
+siem-teamcity-ci-04 - OK - Enabled - Carlos
+siem-teamcity-ci-02 - OK - Enabled - Enrique
+siem-teamcity-ci-01 - OK - Enabled - Enrique
+
+siem-teamcity-ci-06 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-124.178 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-124.219 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-125.196 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-125.201 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-121.85 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-121.84 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-116.114 - OK - Enabled - Carlos - Estaba Habilitado
+siem-teamcity-116.115 - OK - Enabled - Carlos - Estaba Habilitado
+
+
+Limpieza WORK
+
+
+siem-teamcity-116.114 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-116.115 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+
+siem-teamcity-121.84 - OK  - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-121.85 - OK  - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-124.178 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+
+siem-teamcity-124.219 - OK
+siem-teamcity-125.196 - OK
+siem-teamcity-125.201 - OK  - (teamcity.agent.build.checkoutDir.expireHours=120)
+
+siem-teamcity-ci-01 - OK  - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-ci-02 - OK  - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-ci-04 - OK  - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-ci-05 - OK  - (teamcity.agent.build.checkoutDir.expireHours=120)
+
+siem-teamcity-ci-07 - Falta
+
+siem-teamcity-ci-08 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-ci-09 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-ci-10 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+
+SIEM BUILD POOL
+
+siem-teamcity-103.185 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-103.186 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-103.197 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+siem-teamcity-103.193 - OK - (teamcity.agent.build.checkoutDir.expireHours=120)
+
+
+
+vim /opt/apps/buildAgent/conf/buildAgent.properties
+teamcity.agent.build.checkoutDir.expireHours=120
+docker stop siem-teamcity-agent
+docker start siem-teamcity-agent
+
+
+
+
+
+
+
+
+
